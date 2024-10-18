@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDoList</title>
+  </head>
+  <body>
+    <header>
+      <h1>Список дел</h1>
+    </header>
+    <main>
+      <div id="buttons">
+        <button id="btnViewAllTasks" type="button" class="button-list">
+          Показать все задачи
+        </button>
+        <button id="btnViewCompletedTasks" type="button" class="button-list">
+          Показать выполненные
+        </button>
+        <button id="btnViewUncompletedTasks" type="button" class="button-list">
+          Показать невыполненные
+        </button>
+      </div>
+      <div id="container">
+        <input type="text" id="input" placeholder="Добавить задачу" />
+        <button id="addbtn">Добавить</button>
+        <div id="del">
+          <button id="viewDeletedBtn">Просмотреть удаленные задачи</button>
+          <button id="restoreDeletedBtn">
+            Восстановить невыполненные задачи
+          </button>
+        </div>
+      </div>
+      <div id="newtask-container">
+        <ol id="newtask"></ol>
+      </div>
+      <div id="deletedTasksList"></div>
+      <div id="newTaskContainer"></div>
+    </main>
+    <footer></footer>
+    <script src="script2.js"></script>
+  </body>
+</html>
